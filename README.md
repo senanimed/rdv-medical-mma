@@ -65,3 +65,6 @@ Server Software: 	`Apache/2.4.39 (Win64) PHP/7.3.5`
 
 MySQL Version: 		`5.7.26`
 
+**#le travail en groupe 
+le lien de notre projet jira : https://mohamedsenani.atlassian.net/jira/software/projects/MMA/boards/34?atlOrigin=eyJpIjoiZTBiZTQxOGE3MmRmNGFhMWJjYmQyNWU5OWNlNzExMzQiLCJwIjoiaiJ9
+**

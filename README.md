@@ -67,4 +67,7 @@ MySQL Version: 		`5.7.26`
 
 **#le travail en groupe 
 le lien de notre projet jira : https://mohamedsenani.atlassian.net/jira/software/projects/MMA/boards/34?atlOrigin=eyJpIjoiZTBiZTQxOGE3MmRmNGFhMWJjYmQyNWU5OWNlNzExMzQiLCJwIjoiaiJ9
-**
+
+
+
+**date limite : 04/12/2025.

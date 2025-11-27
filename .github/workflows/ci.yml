@@ -1,0 +1,40 @@
+name: CI/CD Pipeline MMA
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  initiation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Message de démarrage
+        run: echo "Début du pipeline CI/CD pour rdv-medical-mma"
+
+  tests-unitaires:
+    runs-on: ubuntu-latest
+    needs: initiation
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+      - name: Exécution des tests
+        run: echo "Tests unitaires - PHPUnit sera configuré prochainement"
+
+  qualite-du-code:
+    runs-on: ubuntu-latest
+    needs: tests-unitaires
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
